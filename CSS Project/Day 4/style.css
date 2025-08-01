@@ -1,0 +1,24 @@
+.border{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    border: 5px solid blue;
+    margin: 50px;
+    border-radius: 50% 0%;
+}
+body{
+    display: inline-flex;
+}
+
+.outline{
+    width: 450px;
+    height: 450px;
+    background-image: url('Image/s.png');
+    background-position: center;
+    background-size: cover;
+    border: 20px groove red;
+    margin: 50px;
+
+    outline: 10px solid white;
+    outline-offset: -25px;
+}

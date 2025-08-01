@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: pink;
+    /* background: radial-gradient(pink, purple; */
+}
+
+
+div{
+    width: 400px;
+    height: 600px;
+    border-radius: 15px;
+    background-color: white;
+    margin-top: 40px;
+    box-shadow: 5px 5px 3px red;
+    
+}
+
+div h2{
+    color: red;
+    font-family: "Pacifico", cursive;
+    font-size: 35px;
+    padding-top: 30px;
+}
+
+div img{
+    padding-top: 20px;
+    
+}
+
+div h3{
+    font-family: "Pacifico", cursive;
+    color: rgb(253, 0, 126);
+    font-size: 25px;
+}
+ div p{
+    padding-top: 15px;
+    font-family: "Pacifico", cursive;
+ }
