@@ -1,0 +1,72 @@
+.header{
+    display: flex;
+    flex: 1;
+    height: 90px;
+    background-color: red;
+}
+
+.banner{
+    display: flex;
+    flex: 1;
+    background-color: black;
+    /* height: 400px; */
+    gap: 50px;
+    padding: 50px;
+}
+
+.box1, .box2, .box3{
+    flex: 1;
+    height: 400px;
+    background-color: white;
+}
+
+.cover{
+    display: flex;
+    flex: 1;
+    background-color: aqua;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.center_box{
+    width: 60%;
+    height: 100px;
+    background-color: yellow;
+}
+
+.content{
+    display: flex;
+    flex: 1;
+    height: 600px;
+    background-color: blue;
+}
+
+.sidebar{
+    flex: 1;
+    height: 600px;
+    background-color: bisque;
+}
+
+.main{
+    display: flex;
+    flex: 4;
+    height: 500px;
+    background-color: brown;
+    gap: 50px;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    flex: 1;
+    height: 400px;
+    background-color: white;
+}
+
+.right{
+    flex: 3;
+    height: 400px;
+    background-color: aquamarine;
+}
