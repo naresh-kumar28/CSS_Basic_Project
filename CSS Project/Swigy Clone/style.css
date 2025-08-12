@@ -1,0 +1,162 @@
+ @font-face {
+     font-family: 'Gilroy-Bold';
+     font-style: normal;
+     font-weight: normal;
+     src: local('Gilroy-Bold'), url('Fonts/Gilroy-Bold.woff') format('woff');
+ }
+
+
+ @font-face {
+     font-family: 'Gilroy-Heavy';
+     font-style: normal;
+     font-weight: normal;
+     src: local('Gilroy-Heavy'), url('Fonts/Gilroy-Heavy.woff') format('woff');
+ }
+
+
+ @font-face {
+     font-family: 'Gilroy-Light';
+     font-style: normal;
+     font-weight: normal;
+     src: local('Gilroy-Light'), url('Fonts/Gilroy-Light.woff') format('woff');
+ }
+
+
+ @font-face {
+     font-family: 'Gilroy-Medium';
+     font-style: normal;
+     font-weight: normal;
+     src: local('Gilroy-Medium'), url('Fonts/Gilroy-Medium.woff') format('woff');
+ }
+
+
+ @font-face {
+     font-family: 'Gilroy-Regular';
+     font-style: normal;
+     font-weight: normal;
+     src: local('Gilroy-Regular'), url('Fonts/Gilroy-Regular.woff') format('woff');
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .header {
+     display: flex;
+     justify-content: space-between;
+     padding: 15px 10%;
+     box-shadow: 3px 4px 7px rgb(243, 243, 243);
+ }
+
+ .left, .right {
+     display: flex;
+     align-items: center;
+     gap: 50px;
+     font-family: "Gilroy-bold";
+
+ }
+
+ .left a {
+     color: black;
+ }
+
+ .left a:hover {
+     color: #FF5403;
+ }
+
+ .location i {
+     color: #FF5403;
+ }
+
+ .right a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .right a:hover {
+     color: #FF5403;
+ }
+
+ .main{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10%;
+ }
+
+ h2{
+    font-family: "Gilroy-bold";
+    font-size: 20px;
+    letter-spacing: 0.8px;
+ }
+
+ .category-container{
+    display: flex;
+    overflow-x: scroll;
+    
+ }
+
+  .category-container::-webkit-scrollbar{
+    display: none;
+    
+ }
+
+ .category-container img{
+    max-width: 14%;
+ }
+
+ hr{
+    margin: 50px 0;
+ }
+
+ .restro-container{
+    display: grid;
+    flex: 1;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+    /* overflow: hidden; */
+    overflow-x: scroll;
+ }
+
+ .restro-container::-webkit-scrollbar{
+    display: none;
+ }
+
+ .restro-card:hover{
+    transform: scale(0.95);
+    transition-duration: 0.2s;
+    
+ }
+
+  img{
+    width: 245px;
+    height: 182px;
+    border-radius: 18px;
+    object-fit: cover;
+ }
+
+ .restro-details{
+    font-family: "Gilroy-medium";
+    padding: 5px 10px;
+ }
+
+ .rating{
+    font-weight: 600;
+ }
+
+.badges{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.badges>span{
+    font-family: "Gilroy-bold";
+    font-size: 15px;
+    color: #414449;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    padding: 8px 16px;
+}
