@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    display: flex;
+    flex: 1;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #273041;
+    /* padding: 1%; */
+}
+
+.left>img{
+    width: 90px;
+}
+
+.left i{
+    border-right: 1px solid white;
+    padding: 30px
+}
+
+.right i {
+    border-left: 1px solid white;
+    padding: 20px
+}
+
+.avatar{
+    border-left: 1px solid white;
+    padding: 14px;
+}
+
+.avatar img{
+    width: 25px;
+    height: 25px;
+}
+
+.left, .middle, .right{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+}
+
+.middle>p{
+    font-size: 13px;
+}
+
+.main{
+    display: flex;
+    flex: 1;
+    height: 100vh;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1%;
+    flex: 4;
+    background-color: #F8F9FF;
+}
+.search-bar{
+    display: flex;
+    width: 100%;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    color: #C5C7C9;
+    padding: 5px 0 0 10px;
+}
+
+.search-bar input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+}
+
+hr{
+    padding: 2px 0;
+    margin: 7px 0;
+    border: none;
+    height: 3px;
+    background-color: #5D72D2;
+}
+
+
+.cart{
+    display: flex;
+    flex: 1;
+    background-color: #FFFFFF;
+}
+
+.category{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.product {
+    margin: 10px;
+}
+
+.box {
+    position: relative;
+    width: 250px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 2px solid #DCDDE7;
+}
+.box:hover{
+    transform: scale(0.98);
+    transition: 0.3s;
+}
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.product-details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.813);
+    padding: 10px;
+    text-align: center;
+}
+
+.product-details h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+}
+
+
