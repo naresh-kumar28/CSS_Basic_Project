@@ -1,0 +1,786 @@
+/* #region Poppins Fonts */
+
+@font-face {
+    font-family: 'Poppins Regular';
+    src: local('Poppins Regular'), url('Fonts/Poppins-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins Italic';
+    src: local('Poppins Italic'), url('Fonts/Poppins-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins Thin';
+    src: local('Poppins Thin'), url('Fonts/Poppins-Thin.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins Thin Italic';
+    src: local('Poppins Thin Italic'), url('Fonts/Poppins-ThinItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins ExtraLight';
+    src: local('Poppins ExtraLight'), url('Fonts/Poppins-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins ExtraLight Italic';
+    src: local('Poppins ExtraLight Italic'), url('Fonts/Poppins-ExtraLightItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins Light';
+    src: local('Poppins Light'), url('Fonts/Poppins-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins Light Italic';
+    src: local('Poppins Light Italic'), url('Fonts/Poppins-LightItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins Medium';
+    src: local('Poppins Medium'), url('Fonts/Poppins-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins Medium Italic';
+    src: local('Poppins Medium Italic'), url('Fonts/Poppins-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins SemiBold';
+    src: local('Poppins SemiBold'), url('Fonts/Poppins-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins SemiBold Italic';
+    src: local('Poppins SemiBold Italic'), url('Fonts/Poppins-SemiBoldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: local('Poppins Bold'), url('Fonts/Poppins-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins Bold Italic';
+    src: local('Poppins Bold Italic'), url('Fonts/Poppins-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins ExtraBold';
+    src: local('Poppins ExtraBold'), url('Fonts/Poppins-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins ExtraBold Italic';
+    src: local('Poppins ExtraBold Italic'), url('Fonts/Poppins-ExtraBoldItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins Black';
+    src: local('Poppins Black'), url('Fonts/Poppins-Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins Black Italic';
+    src: local('Poppins Black Italic'), url('Fonts/Poppins-BlackItalic.woff') format('woff');
+}
+
+/* #endregion */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    min-width: 19%;
+    max-width: 19%;
+    padding: 1%;
+}
+
+.profile{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dp img{
+    width: 48px;
+    border-radius: 50%;
+    border: 2px solid white;
+    outline: 2.5px solid #9333ea;
+}
+
+.user-name p{
+    font-family: "Poppins SemiBold";
+    font-size: 14px;
+}
+
+.user-name span{
+    font-family: "Poppins Regular";
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.plan{
+    width: 210px;
+    height: 75px;
+    padding: 8px 10px 10px 10px;
+    background-color: #FEFCE8;
+    border-radius: 8px;
+    border: 1px solid #FEF08A;
+}
+
+.plan p{
+    color: #a16207;
+    font-family: "Poppins Regular";
+    font-size: 14px;
+}
+
+.subscription{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+.buy-course button, .subscribe button{
+    font-family: "Poppins Regular";
+    font-size: 12px;
+    border: 0;
+    padding: 3px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-course button{
+    color: #8C22CE;
+    background-color: #e9d5ff9d;
+}
+
+.subscribe button{
+    color: #30803D;
+    background-color: #bbf7d09a;
+}
+
+.buy-course button:hover{
+    color: #8C22CE;
+    background-color: #E9D5FF;
+}
+
+.subscribe button:hover{
+    color: #30803D;
+    background-color: #BBF7D0;
+}
+
+.overview p{
+    font-family: "Poppins SemiBold";
+    color: #6b7280;
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.overview-btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 2px;
+}
+
+.overview-btn button{
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    width: 100%;
+    font-size: 14px;
+    font-family: "Poppins Medium";
+    border-radius: 5px;
+    border: 0;
+    background-color: transparent;
+    color: rgb(55, 55, 55);
+    cursor: pointer;
+}
+
+.overview-btn button:hover{
+    background-color: #FAF5FF;
+    color: #7E22CE;
+}
+
+.overview-btn span{
+    display: flex;
+}
+
+.overview-btn button span svg{
+    width: 22px;
+    margin-right: 10px;
+}
+
+.learning p{
+    font-family: "Poppins SemiBold";
+    color: #6b7280;
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.learning-btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 2px;
+}
+
+.learning-btn button{
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    width: 100%;
+    font-size: 14px;
+    font-family: "Poppins Medium";
+    border-radius: 5px;
+    border: 0;
+    background-color: transparent;
+    color: rgb(55, 55, 55);
+    cursor: pointer;
+}
+
+.learning-btn button:hover{
+    background-color: #FAF5FF;
+    color: #7E22CE;
+}
+
+.learning-btn span{
+    display: flex;
+}
+
+.learning-btn button span svg{
+    width: 22px;
+    margin-right: 10px;
+}
+
+.assessment p{
+    font-family: "Poppins SemiBold";
+    color: #6b7280;
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.assessment-btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 2px;
+}
+
+.assessment-btn button{
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    width: 100%;
+    font-size: 14px;
+    font-family: "Poppins Medium";
+    border-radius: 5px;
+    border: 0;
+    background-color: transparent;
+    color: rgb(55, 55, 55);
+    cursor: pointer;
+}
+
+.assessment-btn button:hover{
+    background-color: #FAF5FF;
+    color: #7E22CE;
+}
+
+.assessment-btn span{
+    display: flex;
+}
+
+.assessment-btn button span svg{
+    width: 22px;
+    margin-right: 10px;
+}
+
+.examinations svg{
+    color: #E11D48;
+}
+
+.marksheet svg{
+    color: #E11D48;
+}
+
+.certificate{
+    color: #EA580C;
+}
+
+.account p{
+    font-family: "Poppins SemiBold";
+    color: #6b7280;
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.account-btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 2px;
+}
+
+.account-btn button{
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    width: 100%;
+    font-size: 14px;
+    font-family: "Poppins Medium";
+    border-radius: 5px;
+    border: 0;
+    background-color: transparent;
+    color: rgb(55, 55, 55);
+    cursor: pointer;
+}
+
+.account-btn button:hover{
+    background-color: #FAF5FF;
+    color: #7E22CE;
+}
+
+.account-btn span{
+    display: flex;
+}
+
+.account-btn button span svg{
+    width: 22px;
+    margin-right: 10px;
+}
+
+.store svg{
+    color: #16A34A;
+}
+
+.logout svg{
+    color: #DC2626;
+}
+
+/* Main Content Of Website*/
+
+.content{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 81%;
+    height: 100vh;
+    padding: 1.3% 2.3%;
+    background-color: #F3F4F6;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3%;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    box-shadow: 1px 1px 2px lightgray;
+    border-radius: 55px;
+}
+
+.logo img{
+    height: 25px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bell svg{
+    width: 31px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.bell svg:hover{
+    color: #2563EB;
+    background-color: #EFF6FF;
+}
+
+.gmail-account{
+    display: flex;
+    align-items: center;
+    
+    gap: 8px;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+.gmail-account:hover{
+    background-color: #EFF6FF;
+}
+
+.gmail-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: #2563EB;
+    color: white;
+    border-radius: 30px;
+    font-family: "Poppins Medium";
+    font-size: 15px;
+}
+
+.user-gmail p{
+    font-family: "Poppins Medium";
+    font-size: 15px;
+}
+
+.user-gmail span{
+    font-family: "Poppins Regular";
+    font-size: 12px;
+}
+
+.taskbar{
+    display: flex;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.gems, .tasks, .attendance{
+    width: 100%;
+    height: 110px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px rgb(213, 213, 213);
+    padding: 12px 20px;
+}
+
+.gems, .tasks, .attendance{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text p{
+    font-family: "Poppins Medium";
+    font-size: 15px;
+    color: #3d3d3d;
+}
+
+.text h3{
+    font-family: "Poppins Bold";
+    color: #2563EB;
+    font-size: 25px;
+}
+
+.black h3 {
+    color: black ;
+}
+
+.gems-icon img, .tasks-icon img, .attendance-icon img {
+    width: 55px;
+}
+
+.courses{
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.enrolled-courses{
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    height: 235px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px rgb(213, 213, 213);
+}
+
+.course-status p{
+    font-family: "Poppins SemiBold";
+    font-size: 18px;
+    padding: 16px 24px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(215, 215, 215, 0.877);
+}
+
+.course-name p{
+    font-family: "Poppins SemiBold";
+    font-size: 16px;
+    color: #2563EB;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.course-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    height: 90px;
+    margin: 20px;
+    padding: 16px 10px;
+    border: 1px solid rgba(231, 231, 231, 0.677); 
+    border-radius: 8px;
+}
+
+.course-details:hover {
+    border: 1px solid #afc7ff;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.batch-title{
+    display: flex;
+    gap: 10px;
+}
+
+.batch-title svg{
+    width: 22px;
+    color: #2563EB;
+}
+
+.batch-title p{
+    font-family: "Poppins Medium";
+    font-size: 16px;
+}
+
+.batch-status p{
+    font-family: "Poppins Medium";
+    font-size: 11px;
+    color: #166534;
+    background-color: #dcfce7;
+    border-radius: 10px;
+    padding: 3px 8px;
+}
+
+.address p{
+    padding-left: 40px;
+    font-family: "Poppins Regular";
+    color: #6B7280;
+    font-size: 14px;
+}
+
+.activity-status{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 32%;
+}
+
+.scorers, .weekly-attendance, .rewards {
+    display: flex;
+    /* padding: 16px 24px; */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px rgb(213, 213, 213);
+}
+
+.scorers{
+    height: 235px;
+}
+
+.scorers{
+    display: flex;
+    flex-direction: column;
+}
+
+.scorers-heading{
+    display: flex;
+    font-family: "Poppins semiBold";
+    font-size: 18px;
+    padding: 16px 24px 13px 24px;
+}
+
+.scorers-heading span{
+    font-family: "Poppins Regular";
+    font-size: 14px;
+    color: #6B7280;
+    margin-left: 118px;
+}
+
+.scorers-details{
+    /* display: flex;
+    justify-content: space-between;
+    margin-top: 20px; */
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 0 24px;
+    margin-bottom: 5px;
+    gap: 7px;
+
+}
+
+.abhishek, .chaman, .shalini {
+    display: flex;
+    justify-content: space-between;
+    
+    /* margin-top: 20px; */
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.avtr-name p{
+    font-family: "Poppins Regular";
+    font-size: 15px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.total-scorers p {
+    font-family: "Poppins Regular";
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.scorers-icon svg {
+    width: 20px;
+}
+
+.weekly-attendance{
+    display: flex;
+    flex-direction: column;
+    height: 215px;
+}
+
+.week p{
+    font-family: "Poppins semiBold";
+    font-size: 18px;
+    padding: 16px 24px 13px 24px;
+
+}
+
+.attendance-register{
+    font-family: "Poppins Medium";
+    font-size: 16px;
+    color: #374151;
+    padding: 25px 24px 0 24px;
+    
+}
+
+.show-attandance{
+    padding-top: 10px;
+}
+
+.show-attandance img, 
+.show-attandance p{
+    width: 35px;
+
+    font-family: "Poppins Medium";
+    font-size: 12px;
+    color: #6B7280;
+}
+
+.day{
+    display: flex;
+    gap: 7px;
+    padding-left: 5px;
+}
+
+.rewards{
+    display: flex;
+    flex-direction: column;
+    height: 295px;
+}
+
+.view-rewards p{
+    font-family: "Poppins semiBold";
+    font-size: 18px;
+    padding: 16px 24px 13px 24px;
+}
+
+.current-gems{
+    display: flex;
+    align-items: center;
+    padding: 25px 24px 5px 24px;
+}
+
+.current-gems p{
+    font-family: "Poppins Medium";
+    font-size: 14px;
+    color: #374151;
+}
+
+.current-gems span{
+    font-family: "Poppins Bold";
+    font-size: 18px;
+    color: #2563EB;
+    margin-left: 130px;
+}
+
+.rewards img{
+    width: 290px;
+    margin: 0 auto;
+}
+
+.redeem-rewards{
+    display: flex;
+    gap: 15px;
+    padding: 10px 24px 5px 24px;
+}
+
+.redeem-rewards img{
+    width: 50px;
+    border-radius: 8px;
+}
+
+.redeem-rewards p{
+    font-family: "Poppins Regular";
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.rewards button{
+    font-family: "Poppins Medium";
+    color: white;
+    background-color: #3e7bff;
+    font-size: 14px;
+    border: 0;
+    margin: 10px 24px;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.rewards button:hover{
+    cursor: pointer;
+    background-color: #2563EB;
+}
