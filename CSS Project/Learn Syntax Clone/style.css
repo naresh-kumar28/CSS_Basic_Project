@@ -118,6 +118,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    position: relative;
 }
 
 .dp img{
@@ -125,6 +126,27 @@
     border-radius: 50%;
     border: 2px solid white;
     outline: 2.5px solid #9333ea;
+}
+
+.dp .green{
+    width: 12px;
+    height: 12px;
+    background-color: #22C55E;
+    border: 2px solid white;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    left: 34px;
+    bottom: 3.3px;
+}
+
+.dp img{
+    transition: 0.3s;
+    /* transition: transform 0.3s ease-in-out; */
+}
+
+.dp img:hover{
+    transform: scale(1.05);
 }
 
 .user-name p{
@@ -754,13 +776,20 @@ hr {
 
 .redeem-rewards{
     display: flex;
+    align-items: center;
     gap: 15px;
     padding: 10px 24px 5px 24px;
 }
 
 .redeem-rewards img{
-    width: 50px;
+    width: 60px;
+    height: 70px;
     border-radius: 8px;
+    transition: 0.3s;
+}
+
+.redeem-rewards img:hover{
+    transform: scale(1.05);
 }
 
 .redeem-rewards p{
