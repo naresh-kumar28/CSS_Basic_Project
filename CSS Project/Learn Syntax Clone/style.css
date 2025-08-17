@@ -184,6 +184,7 @@
     font-family: "Poppins Regular";
     font-size: 12px;
     border: 0;
+    outline: 0;
     padding: 3px 8px;
     border-radius: 5px;
     cursor: pointer;
@@ -238,6 +239,11 @@
 }
 
 .overview-btn button:hover{
+    background-color: #FAF5FF;
+    color: #7E22CE;
+}
+
+button.active{
     background-color: #FAF5FF;
     color: #7E22CE;
 }
